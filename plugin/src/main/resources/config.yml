@@ -1,0 +1,36 @@
+#message-key:
+#  delay: <delay>
+#  timer: <timer>
+#  servers: <servers>
+#  message: <message>
+#  message-id: <message-id>
+#
+#Whith:
+#'message-key' [key] a unique message key
+#<delay> [integer] the delay before the first time it is sent (in seconds). 
+#<timer> [integer] the time between two message (in seconds).
+#<servers> [string-list] the server list where this message should be sent. Leave empty to send it to every server
+#<message> [string] the message to send.
+#<message-id> [string] the id of the message to send. It should reference an id specified in "message-registry.lang"
+#
+#You need to have 'message' OR 'message-id' configured. 
+#If both are specified, then 'message' value is prefered.
+#If none of them are specified, the whole section is ignored.
+#
+#Example:
+#
+#vote-reminder:
+#  delay: 3600
+#  timer: 6000
+#  servers: []
+#  message: "&6Don't forget to vote for us!" 
+#
+#hello:
+#  delay: 5000
+#  timer: 5000
+#  servers:
+#    - skyblock
+#    - survival
+#  message-id: "hello"
+#
+

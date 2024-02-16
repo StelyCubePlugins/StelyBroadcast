@@ -1,0 +1,5 @@
+name: "StelyBroadcast"
+version: "${version}"
+author: "Flowsqy"
+main: "fr.stelycube.stelybroadcast.StelyBroadcastPlugin"
+
