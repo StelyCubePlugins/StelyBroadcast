@@ -23,7 +23,7 @@ public class MessageConfig {
     public void load(@NotNull ConfigLoader configLoader, @NotNull Plugin plugin, @NotNull String fileName) {
         final File configFile = configLoader.initFile(plugin.getDataFolder(), Objects.requireNonNull(plugin.getResourceAsStream(fileName)), fileName);
         try {
-            configuration = ConfigurationProvider.getProvider(YamlConfiguration.class).load(configFile);         
+            configuration = ConfigurationProvider.getProvider(YamlConfiguration.class).load(configFile);
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
@@ -57,4 +57,3 @@ public class MessageConfig {
     }
 
 }
-

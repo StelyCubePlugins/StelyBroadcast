@@ -11,7 +11,7 @@ public class CommandLoader {
     public void load(@NotNull Plugin plugin, @NotNull MessageConfig messageConfig) {
         final PluginManager pluginManager = plugin.getProxy().getPluginManager();
         pluginManager.registerCommand(plugin, new ReloadCommand(plugin, messageConfig));
+        pluginManager.registerCommand(plugin, new VisualCommand(plugin, messageConfig));
     }
 
 }
-
